@@ -1,28 +1,10 @@
 Angular Socialshare
 ==================
 
-![Angular socialshare](http://i.imgur.com/dvoeyBu.png)
-
-[![Join the chat at https://gitter.im/720kb/angular-socialshare](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/720kb/angular-socialshare?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
-
-
-Angular Socialshare is an angularjs directive for sharing urls and content on social networks such as (facebook, google+, twitter, pinterest and so on).
-
-
-The Angular Socialshare is developed by [720kb](http://720kb.net).
-
 #### Requirements
 
 
 AngularJS v1.3+
-
-#### Browser support
-
-
-Chrome | Firefox | IE | Opera | Safari
---- | --- | --- | --- | --- |
- ✔ | ✔ | IE9 + | ✔ | ✔ |
-
 
 ## Load
 
@@ -487,59 +469,3 @@ You may need to share from a controller (for example), this is how to use the `S
 ```
 _Some providers (specially mobile provider, such as: Viber, Whatsapp etc..) do not work with a Service call, because their API or Usage does not allow a trigger event on them_
 
-## Globals
-
-#### Provider setup
-Sometimes you may need to set default values for all the sharing buttons, here is how to setup this:
-
-```javascript
-.config(['socialshareConfProvider', function configApp(socialshareConfProvider) {
-
-  socialshareConfProvider.configure([
-    {
-      'provider': 'twitter',
-      'conf': {
-        'url': 'http://720kb.net',
-        'text': '720kb is enough',
-        'via': 'npm',
-        'hashtags': 'angularjs,socialshare,angular-socialshare',
-        'trigger': 'click',
-        'popupHeight': 800,
-        'popupWidth' : 400
-      }
-    },
-    {
-      'provider': 'facebook',
-      'conf': {
-        'url': 'http://720kb.net',
-        'trigger': 'mouseover',
-        'popupHeight': 1300,
-        'popupWidth' : 1000
-      }
-    }
-  //and so on ...
-  ]);
-}]);
-```
-*NB* if you define the provider settings, but then you change the option value by html attributes, the html attribute value will be the final one (the one that will be used)
-
-
-#### [Live demo](https://720kb.github.io/angular-socialshare)
-
-
-## Contributing
-
-We will be much grateful if you help us making this project to grow up.
-Feel free to contribute by forking, opening issues, pull requests etc.
-
-## License
-
-The MIT License (MIT)
-
-Copyright (c) 2014 Filippo Oretti, Dario Andrei
-
-Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
-
-The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
-
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
